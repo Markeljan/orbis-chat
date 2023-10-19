@@ -5,7 +5,7 @@ export async function POST(req: Request) {
     const json = await req.json();
     const { text, voiceId } = json;
 
-    const res = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}/stream`, {
+    const res = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId || "1rEpyS4Ro5Yt7Yiodu6s"}/stream`, {
         method: 'POST',
         headers: {
             'accept': "audio/mpeg",
