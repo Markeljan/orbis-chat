@@ -18,9 +18,6 @@ export function Chat({ className, username }: ChatProps & { username: string }) 
     const voiceId = fetchedProfileData?.data[0]?.details?.profile?.data?.trainingData?.voiceId
     const data = fetchedProfileData?.data[0]?.details?.profile?.data?.trainingData?.data
 
-    console.log('fetchedProfileData', fetchedProfileData)
-    console.log('voiceId', voiceId)
-    console.log('data', data)
     const toggleAudio = useTextToSpeech()
 
     const { messages, append, reload, stop, isLoading, input, setInput } =

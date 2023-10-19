@@ -45,8 +45,6 @@ export function useOrbis(username?: string) {
                 trainingData
             }
         });
-
-        console.log(res);
     }
 
 
